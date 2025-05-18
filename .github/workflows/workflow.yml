@@ -28,5 +28,5 @@ jobs:
             cd ..
             docker-compose build vite-frontend
             docker-compose down
-            docker-compose up -d vite-frontend
+            docker-compose up -d
           EOF
