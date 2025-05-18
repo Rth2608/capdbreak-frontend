@@ -23,7 +23,7 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_ed25519 ${{ secrets.GCP_VM_USER }}@${{ secrets.GCP_VM_IP }} << 'EOF'
             set -e
-            cd ~/vite-backend
+            cd ~/frontend
             git pull
             cd ..
             docker-compose build vite-frontend
